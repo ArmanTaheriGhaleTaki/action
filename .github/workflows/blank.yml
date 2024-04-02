@@ -26,3 +26,10 @@ jobs:
         with:
           name: output-log-file
           path: output.log
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: output-log-fil
